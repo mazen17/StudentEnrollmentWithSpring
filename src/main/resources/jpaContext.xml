@@ -39,9 +39,9 @@
 	<tx:annotation-driven transaction-manager="transactionManager" />
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://mydbinstance.cavpckqdd90v.us-east-1.rds.amazonaws.com:3306/studentEnrollment?autoReconnect=true&amp;createDatabaseIfNotExist=true&amp;" />
-		<property name="username" value="awsuser" />
-		<property name="password" value="password" />
+		<property name="url" value="jdbc:mariadb://diana:3306/spring" />
+		<property name="driverClassName" value="org.mariadb.jdbc.Driver" />
+		<property name="username" value="spring" />
+		<property name="password" value="spring" />
 	</bean>
 </beans>
